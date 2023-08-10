@@ -56,7 +56,7 @@ class Die:
         '''
         if face not in self.faces:
             raise IndexError("Input face to change must in the original die faces array")
-        if weight.isnumeric() == False:
+        if isinstance(weight, (int, float)) == False:
             try:
                 weight = float(weight)
             except:

@@ -22,10 +22,10 @@ class TestDie(unittest.TestCase):
         face3 = np.array([1,2,3,4,5,6])
         die3 = Die(face3)
         message3 = "The status of die is not shown"
-        self.assertIn(len(die3.showdie()), 6, message3)
+        dielen = len(die3.showdie())
+        self.assertEqual(dielen, 6, message3)
     
-if __name__ == '__main__':
-    unittest.main(verbosity=3)
+
     
 class TestGame(unittest.TestCase):
     def test_play(self):
@@ -51,8 +51,6 @@ class TestGame(unittest.TestCase):
         message5 = "The game is not played"
         self.assertEqual(game2.showresults().shape, expected, message5)
 
-if __name__ == '__main__':
-    unittest.main(verbosity=3)
 
 class TestAnalyzer(unittest.TestCase):
     def test_jackpot(self):
