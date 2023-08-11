@@ -2,7 +2,7 @@
 
 ## METADATA
 
-Name: Lingzhen Zhu
+Name: Lingzhen Zhu/n
 Project Name: Montecarlo Simulator, Final Project for DS5100
 
 ## SYNOPSIS
