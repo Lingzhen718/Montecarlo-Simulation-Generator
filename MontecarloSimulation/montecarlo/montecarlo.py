@@ -30,7 +30,7 @@ class Die:
         '''
         if not isinstance(faces, np.ndarray):
             raise TypeError("Input die faces must be a NumPy array")
-        if faces.dtype.kind not in ['S', 'i', 'u', 'f']:
+        if not all(isinstance(face, (str, int, float, np.number)) for face in faces):
             raise TypeError("Input die faces array must only contain strings or numbers")
         if len(np.unique(faces)) != len(faces):
             raise ValueError("Input die faces array must only contain unique values")
