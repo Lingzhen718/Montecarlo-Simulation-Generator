@@ -1,9 +1,14 @@
 # qrb2gn_ds5100_montecarlo
 
+***Welcome！***
+
 ## METADATA
 
-Name: Lingzhen Zhu/n
-Project Name: Montecarlo Simulator, Final Project for DS5100
+Name: Lingzhen Zhu
+
+Project Name: Montecarlo Simulator
+
+———— Final Project for DS5100
 
 ## SYNOPSIS
 
@@ -183,4 +188,4 @@ CLASSES
 ![image](https://github.com/Lingzhen718/qrb2gn_ds5100_montecarlo/assets/137128891/52558d4d-fcfe-4eb8-aa92-be85b271e0d1)
 
 
-# Thank you!
+***Thank you!***
