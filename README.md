@@ -11,64 +11,24 @@ You can install the package using this command:
 pip install -e .
 (pandas and numpy install are needed)
 
-You can import the package using these commands:
+* You can import the package using these commands:
 from MontecarloSimulation.montecarlo import Die
 from MontecarloSimulation.montecarlo import Game
 from MontecarloSimulation.montecarlo import Analyzer
 
-To create a die object, you can use this commands:
+* To create a die object, you can use this commands:
 die1 = Die(np.array([1, 2, 3, 4, 5, 6]))
 die1.changeweight(6, 3)
 die1.rolldie(5)
 die1.showdie()
 
-To create a game object, you can use this commands:
+* To create a game object, you can use this commands:
 die2 = Die(np.array([1, 2, 3, 4, 5, 6]))
 game1 = Game([die1, die2])
 game1.play(5)
 game1.showresults('narrow')
 
-To create a analyzer object, you can use this commands:
-analyzer1 = Analyzer(game1)
-analyzer1.jackpot()
-analyzer1.face_counts_per_roll()
-analyzer1.combo_count()
-analyzer1.permutation_count()
-
-## API DESCRIPTION
-
-See INPUTS and OUTPUTS under each class and function for descriptions of parameters and return values.
-
-CLASSES
-    Die
-    Game
-    Analyzer
-    
-    class Analyzer(Game)
-     |  Analyzer(games)
-        Analyzes the results of a game.
-
-        The Analyzer class allows you to analyze the results of a game.
-        The game must be played first before the analysis.
-    from MontecarloSimulation.montecarlo import Game
-from MontecarloSimulation.montecarlo import Analyzer
-
-
-To create a die object, you can use this commands:
-die1 = Die(np.array([1, 2, 3, 4, 5, 6]))
-die1.changeweight(6, 3)
-die1.rolldie(5)
-die1.showdie()
-
-
-To create a game object, you can use this commands:
-die2 = Die(np.array([1, 2, 3, 4, 5, 6]))
-game1 = Game([die1, die2])
-game1.play(5)
-game1.showresults('narrow')
-
-
-To create a analyzer object, you can use this commands:
+* To create a analyzer object, you can use this commands:
 analyzer1 = Analyzer(game1)
 analyzer1.jackpot()
 analyzer1.face_counts_per_roll()
