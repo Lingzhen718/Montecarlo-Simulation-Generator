@@ -44,75 +44,7 @@ CLASSES
     Die
     Game
     Analyzer
-     |
-    class Die(builtins.object)
-     |  Die(faces)
-     |  
-     |  Simulates rolling a die with weighted sides.
-     |  
-     |  The DieSimulator class allows you to simulate rolling a die with weighted sides.
-     |  A die has sides, or “faces”, and weights, and can be rolled to select a face.
-     |  Each side contains a unique symbol. Symbols may be all alphabetic or all numeric.
-     |  Normally, dice is “fair” meaning that the each side has an equal weight. An unfair die is one where the weights are unequal.
-     |  
-     |  The roll method generates random samples based on the weights.
-     |  
-     |  Methods defined here:
-     |  
-     |  __init__(self, faces)
-     |      PURPOSE: Initialize a die object with a given list of faces
-     |      
-     |      INPUTS:
-     |      faces      NumPy Array(Items in the array should be unique strings or numbers)      The faces of the die
-     |      
-     |      OUTPUTS:
-     |      None
-     |      
-     |      NOTES:
-     |      - The weights of each face (W) are initialized to 1
-     |      - The weights with the faces are stored as die status
-     |  
-     |  changeweight(self, face, weight)
-     |      PURPOSE: Change the weight of a face in the given die
-     |      
-     |      INPUTS:
-     |      face      String or Numeric (Should be one of the value in face array)      The face to change the weight of
-     |      weight    Numeric (Or castable as numeric; Cannot be negative)              The new weight of the face
-     |      
-     |      OUTPUTS:
-     |      None
-     |      
-     |      NOTES:
-     |      - The function will try to change the weight to be float type if the input is not numeric
-     |      - Bothe the weight of the face (W) and the stored die status are changed
-     |  
-     |  rolldie(self, N=1)
-     |      PURPOSE: Roll the die N times (one or more times) according to the given faces and weights (W), and return all the results in a list
-     |      
-     |      INPUTS:
-     |      N      Integer (Default value is 1; Must be positive)      The number of times to roll the die
-     |      
-     |      OUTPUTS:
-     |      results      List      The outcomes of all the N times die rolls
-     |      
-     |      NOTES:
-     |      - The function does not store internally these results
-     |  
-     |  showdie(self)
-     |      PURPOSE: Show the current status of the die
-     |      
-     |      INPUTS:
-     |      None
-     |      
-     |      OUTPUTS:
-     |      None
-     |      
-     |      NOTES:
-     |      - The function prints the stored die status
-     |  
-     |  ----------------------------------------------------------------------
-     |  
-    
+
     class Game(Die)
      |  Game(dies)
      |  
