@@ -180,17 +180,7 @@ CLASSES
      |  
        
 ## MANIFEST
+![image](https://github.com/Lingzhen718/qrb2gn_ds5100_montecarlo/assets/137128891/52558d4d-fcfe-4eb8-aa92-be85b271e0d1)
 
-qrb2gn_ds5100_montecarlo/
-    README
-    LICENSE
-    MontecarloSimulation/
-        setup.py
-        montecarlo_demo.ipynb
-        montecarlo_test_results.txt
-        montecarlo/
-            __init__.py
-            montecarlo.py
-            montecarlo_test.py
 
 # Thank you!
