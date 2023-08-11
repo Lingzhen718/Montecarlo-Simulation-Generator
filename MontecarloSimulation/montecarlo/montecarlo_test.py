@@ -4,6 +4,12 @@ import numpy as np
 import pandas as pd
 
 class TestDie(unittest.TestCase):
+    def test_Die_init(self):
+        face0 = np.array([1,2,3,4,5,6])
+        die = Die(face0)
+        message = "The die is not created"
+        self.assertTrue(np.array_equal(die.faces, face0), message)
+
     def test_changeweight(self):
         face1 = np.array([1,2,3,4,5,6])
         die1 = Die(face1)
@@ -28,6 +34,13 @@ class TestDie(unittest.TestCase):
 
     
 class TestGame(unittest.TestCase):
+    def test_Game_init(self):
+        face0 = np.array([1,2,3,4,5,6])
+        dies0 = [Die(face0), Die(face0)]
+        game0 = Game(dies0)
+        message = "The game is not created"
+        self.assertEqual(game0.dies, dies0, message)
+
     def test_play(self):
         face4 = np.array([1,2,3,4,5,6])
         die4 = Die(face4)
@@ -53,6 +66,17 @@ class TestGame(unittest.TestCase):
 
 
 class TestAnalyzer(unittest.TestCase):
+    def test_Analyzer_init(self):
+        face10 = np.array([1,2,3,4,5,6])
+        die16 = Die(face10)
+        die17 = Die(face10)
+        dies7 = [die16, die17]
+        game7 = Game(dies7)
+        game7.play(5)
+        analyzer0 = Analyzer(game7)
+        message = "The analyzer is not created"
+        self.assertEqual(analyzer0.games, game7, message)
+
     def test_jackpot(self):
         face6 = np.array([1,2,3,4,5,6])
         die8 = Die(face6)
