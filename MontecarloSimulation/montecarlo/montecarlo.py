@@ -179,6 +179,14 @@ class Game(Die):
                     return pd.DataFrame(self._results.copy().stack()).rename(columns={0:'Face'})
 
 class Analyzer(Game):
+    '''
+    Analyzes the results of a game.
+
+    The Analyzer class allows you to analyze the results of a game.
+    The game must be played first before the analysis.
+    The jackpot and face counts per roll method statistically record the occurrence of each face of the die according to certain rules
+    The combo count and permutation count method statistically record the combination of all the faces.
+    '''
     def __init__(self, games):
         '''
         PURPOSE: Initialize an analyzer object with a given game object
