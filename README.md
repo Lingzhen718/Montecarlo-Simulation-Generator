@@ -43,7 +43,10 @@ analyzer1.permutation_count()
 
 See INPUTS and OUTPUTS under each class and function for descriptions of parameters and return values.
 
-![image](https://github.com/Lingzhen718/Montecarlo-Simulation-Generator/assets/137128891/e5cdc85f-c488-4cd6-aa66-f3b315133604)
+Class
+* Die
+* Game
+* Analyzer
 
      |  Class Game(Die)
      |  Game(dies)
@@ -180,7 +183,15 @@ See INPUTS and OUTPUTS under each class and function for descriptions of paramet
      |  
        
 ## MANIFEST
-![image](https://github.com/Lingzhen718/qrb2gn_ds5100_montecarlo/assets/137128891/52558d4d-fcfe-4eb8-aa92-be85b271e0d1)
+MontecarloSimulation
+*montecarlo
+     __init__.py
+
+     montecarlo.py
+
+*montecarlo_demo.ipynb
+*montecarlo_test_results.txt
+*setup.py
 
 
 ***Thank you!***
