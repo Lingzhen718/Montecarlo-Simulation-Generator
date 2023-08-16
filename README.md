@@ -47,7 +47,9 @@ Class
 * Die
 * Game
 * Analyzer
-  
+
+Details:
+
 
      |  Class Game(Die)
      |  Game(dies)
