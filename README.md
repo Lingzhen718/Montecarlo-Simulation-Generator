@@ -47,6 +47,7 @@ Class
 * Die
 * Game
 * Analyzer
+  
 
      |  Class Game(Die)
      |  Game(dies)
@@ -184,14 +185,14 @@ Class
        
 ## MANIFEST
 MontecarloSimulation
-*montecarlo
+* montecarlo
      __init__.py
 
      montecarlo.py
 
-*montecarlo_demo.ipynb
-*montecarlo_test_results.txt
-*setup.py
+* montecarlo_demo.ipynb
+* montecarlo_test_results.txt
+* setup.py
 
 
 ***Thank you!***
