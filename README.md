@@ -1,14 +1,12 @@
-# qrb2gn_ds5100_montecarlo
+# Montecarlo Simulation Generator
 
-***Welcome！***
+***This is the Final Project for DS5100***
 
 ## METADATA
 
 Name: Lingzhen Zhu
 
 Project Name: Montecarlo Simulator
-
-———— Final Project for DS5100
 
 ## SYNOPSIS
 
@@ -45,12 +43,9 @@ analyzer1.permutation_count()
 
 See INPUTS and OUTPUTS under each class and function for descriptions of parameters and return values.
 
-CLASSES
-    Die
-    Game
-    Analyzer
+![image](https://github.com/Lingzhen718/Montecarlo-Simulation-Generator/assets/137128891/e5cdc85f-c488-4cd6-aa66-f3b315133604)
 
-    class Game(Die)
+     |  Class Game(Die)
      |  Game(dies)
      |  
      |  Simulates a game with multiple dice for multiple times.
